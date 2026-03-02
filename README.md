@@ -13,28 +13,26 @@ A working AI-based helpdesk chatbot/demo designed for **University of Ghana, Leg
 - Evaluation script and risk assessment documentation.
 
 ## Project structure
-- `app/chatbot.py` - chatbot engine and CLI demo.
+- `app/chatbot.py` - chatbot engine, CLI, and scripted demo mode.
 - `data/ug_faqs.json` - FAQ knowledge base.
 - `tests/evaluate_chatbot.py` - scenario-based accuracy evaluation.
 - `docs/use_cases.md` - use-case documentation.
 - `docs/evaluation.md` - effectiveness and risk evaluation.
 
-## Run the demo
+## Run the interactive chatbot
 ```bash
 python app/chatbot.py
+```
+
+## Display the scripted demo
+```bash
+python app/chatbot.py --demo
 ```
 
 ## Run evaluation
 ```bash
 python tests/evaluate_chatbot.py
 ```
-
-## Example queries
-- "How do I apply for UG undergraduate admission?"
-- "My name is missing from graduation list"
-- "I forgot my portal password"
-- "How can I request transcript?"
-- "I can't register courses on MIS"
 
 ## Security posture
 - Prevents sensitive data sharing prompts.

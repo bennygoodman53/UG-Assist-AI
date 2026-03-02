@@ -1,14 +1,9 @@
-"""UG Assist AI - Prompt + FAQ-based IT helpdesk chatbot for University of Ghana.
-
-This module implements a privacy-aware support assistant that can run in two modes:
-1) Local FAQ/rule mode (default, no external API call)
-2) OpenAI API mode (optional; enabled when OPENAI_API_KEY is set)
-"""
+"""UG Assist AI - Prompt + FAQ-based IT helpdesk chatbot for University of Ghana."""
 
 from __future__ import annotations
 
+import argparse
 import json
-import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -92,6 +87,30 @@ class UGHelpdeskBot:
         }
 
 
+def print_response(result: dict) -> None:
+    if result.get("privacy_warning"):
+        print(f"Bot: {result['privacy_warning']}")
+    print(f"Bot: {result['answer']}")
+    print(f"Source: {result['source']}")
+    print(f"Escalation: {result['escalation']}\n")
+
+
+def run_demo() -> None:
+    bot = UGHelpdeskBot()
+    demo_queries = [
+        "How do I apply for UG undergraduate admission?",
+        "My name is missing from graduation list.",
+        "I forgot my portal password and OTP.",
+        "How can I request transcript?",
+    ]
+
+    print("UG Assist AI - Demo Session (University of Ghana, Legon)")
+    print("=" * 60)
+    for query in demo_queries:
+        print(f"You: {query}")
+        print_response(bot.ask(query))
+
+
 def run_cli() -> None:
     bot = UGHelpdeskBot()
     print("UG Assist AI - IT Helpdesk Chatbot (University of Ghana, Legon)")
@@ -101,14 +120,19 @@ def run_cli() -> None:
         if query.lower() in {"exit", "quit"}:
             print("Bot: Goodbye.")
             break
+        print_response(bot.ask(query))
 
-        result = bot.ask(query)
-        if result.get("privacy_warning"):
-            print(f"Bot: {result['privacy_warning']}")
-        print(f"Bot: {result['answer']}")
-        print(f"Source: {result['source']}")
-        print(f"Escalation: {result['escalation']}\n")
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="UG Assist AI chatbot")
+    parser.add_argument("--demo", action="store_true", help="Run a scripted demo session")
+    args = parser.parse_args()
+
+    if args.demo:
+        run_demo()
+        return
+    run_cli()
 
 
 if __name__ == "__main__":
-    run_cli()
+    main()
