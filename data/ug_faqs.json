@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "project": "UG Assist AI",
+    "institution": "University of Ghana, Legon",
+    "notes": "FAQ entries are designed from UG Admissions/AAD FAQ themes and should be validated periodically against official pages."
+  },
+  "security_notices": [
+    "Never request user passwords, OTP, or MoMo PIN in chat.",
+    "Mask student IDs and transaction references when sharing logs.",
+    "Escalate account-level requests to official UG channels."
+  ],
+  "faqs": [
+    {
+      "source": "UG Admissions Undergraduate FAQ",
+      "category": "Admissions",
+      "question": "How do I apply for undergraduate admission at UG?",
+      "answer": "Use the official UG admissions portal, purchase/apply with the required e-voucher, complete all fields, upload required documents, and submit before the deadline.",
+      "keywords": ["apply", "admission", "undergraduate", "e-voucher", "deadline"],
+      "escalation": "Contact UG Admissions support if payment or form submission fails."
+    },
+    {
+      "source": "UG Admissions Undergraduate FAQ",
+      "category": "Admissions",
+      "question": "Can I edit my application after submission?",
+      "answer": "Most UG admission forms can only be edited before final submission. If already submitted, contact Admissions support immediately for guidance.",
+      "keywords": ["edit", "submitted", "application", "change"],
+      "escalation": "Escalate to UG Admissions with your application reference number."
+    },
+    {
+      "source": "UG Admissions Undergraduate FAQ",
+      "category": "Admissions",
+      "question": "How do I check my admission status?",
+      "answer": "Log in to the UG admissions checker/portal using your application details to view current status and any further instructions.",
+      "keywords": ["status", "admission list", "checker", "portal"],
+      "escalation": "If status is unavailable after official release, contact Admissions."
+    },
+    {
+      "source": "UG AAD Graduation FAQ",
+      "category": "Graduation",
+      "question": "How do I know if I am eligible to graduate?",
+      "answer": "Graduation eligibility depends on completion of programme requirements, approved results, and clearance of outstanding obligations as directed by AAD.",
+      "keywords": ["eligible", "graduate", "requirements", "clearance"],
+      "escalation": "Contact your department and AAD Graduation Desk for eligibility verification."
+    },
+    {
+      "source": "UG AAD Graduation FAQ",
+      "category": "Graduation",
+      "question": "What should I do if my name is missing from the graduation list?",
+      "answer": "Report immediately to your department and AAD with supporting records so your case can be reviewed before ceremony deadlines.",
+      "keywords": ["missing name", "graduation list", "omitted", "ceremony"],
+      "escalation": "Escalate to department examinations officer and AAD Graduation Unit."
+    },
+    {
+      "source": "UG AAD FAQ",
+      "category": "Academic Records",
+      "question": "How can I request a transcript or academic record?",
+      "answer": "Apply through the official UG transcript/records process under AAD, provide identity and payment proof, then track processing timelines communicated by the office.",
+      "keywords": ["transcript", "record", "academic", "request"],
+      "escalation": "Follow up with AAD Records Office if processing exceeds stated timelines."
+    },
+    {
+      "source": "UG AAD FAQ",
+      "category": "Academic Records",
+      "question": "How do I correct an error in my name or biodata?",
+      "answer": "Submit a formal correction request to AAD with valid identification and supporting legal/official documents for verification.",
+      "keywords": ["name correction", "biodata", "error", "change of name"],
+      "escalation": "Escalate to AAD Records and your college registry if unresolved."
+    },
+    {
+      "source": "UG AAD FAQ",
+      "category": "Registration",
+      "question": "I cannot register courses on MIS/portal. What should I do?",
+      "answer": "Check registration dates, cleared fees, and portal availability. If still blocked, contact your college/departmental registration support and UG ICT helpdesk.",
+      "keywords": ["register courses", "MIS", "portal", "fees", "blocked"],
+      "escalation": "Open UG ICT ticket with screenshot, date/time, and error message (without password)."
+    },
+    {
+      "source": "UG Admissions Undergraduate FAQ",
+      "category": "Payments",
+      "question": "I made payment but my application status is not updated.",
+      "answer": "Payment confirmations may take some time. Keep proof of payment and recheck later; if unresolved, contact Admissions with transaction reference.",
+      "keywords": ["payment", "status not updated", "transaction", "voucher"],
+      "escalation": "Escalate to Admissions finance/helpdesk with masked proof of payment."
+    },
+    {
+      "source": "UG AAD FAQ",
+      "category": "IT Security",
+      "question": "I forgot my portal password.",
+      "answer": "Use the official password reset workflow on the UG portal. Do not share password, OTP, or security codes with anyone.",
+      "keywords": ["forgot password", "reset", "portal", "security"],
+      "escalation": "If reset fails, contact UG ICT helpdesk via official channels."
+    }
+  ]
+}
